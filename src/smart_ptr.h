@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef _T_MEMORY
 #define _T_MEMORY
 
