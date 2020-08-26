@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef _T_MEMORY
 #define _T_MEMORY
 
@@ -56,6 +57,13 @@ private:
     T* m_obj;
 };
 
+=======
+#ifndef _SMART_PTR
+#define _SMART_PTR
+
+namespace ministl {
+
+>>>>>>> c2c3538ebff4520eb7f8a1ce2bd821e10224bae6
 }
 
 #endif
