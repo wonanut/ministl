@@ -1,3 +1,15 @@
+/*
+ Copyright (c) 2020-2020 Howard Wonanut
+
+ This is the demo version of Json parser, which refer to the wonderful project
+ cJSON (Github: https://github.com/DaveGamble/cJSON.git). This project is just
+ a toy since there still have many problems that are not fixed, for example,
+ the memory release function was not complished so far, some potential bugs. 
+ I will update this project quickly to make it available and safe:)
+
+ BE CAUTIOUS IF YOU TRY TO USE THE UNSTABLE VERSION OF CODE.
+*/
+
 #pragma once
 #pragma warning(disable: 4996)
 
