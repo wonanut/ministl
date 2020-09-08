@@ -21,8 +21,8 @@ int main() {
         std::cout << *uptr << std::endl;
     }
     ministl::unique_ptr<int> uptr2(new int(12));
-    ministl::unique_ptr<int> uptr3 = get_unique_ptr();
-    std::cout << *uptr2 << std::endl;
+    ministl::unique_ptr<int> uptr3 = (ministl::unique_ptr<int>&&)uptr2; 
+    // std::cout << *uptr2 << std::endl;
     std::cout << *uptr3 << std::endl;
 
     /*********** string test **************/

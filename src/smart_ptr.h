@@ -19,10 +19,10 @@ public:
     // delete the default copy constructor function.
     unique_ptr(const unique_ptr<T>&) = delete;
     
-    // deflete the default assignment constructor function.
+    // delete the default assignment operator function.
     unique_ptr<T>& operator = (const unique_ptr<T>* rhs) = delete;
 
-    // rhs means right-hand-side
+    // rhs means right-hand-side reference.
     unique_ptr(unique_ptr<T>&& rhs) : m_obj(rhs.m_obj) {
         std::cout << "rhs called!" << std::endl;
         rhs.m_obj = nullptr;
