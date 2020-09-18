@@ -9,8 +9,13 @@ hands on C++ standard template library
 ## Hands on tiny C++ project
 
 - cJSON
-
+- Redis basic data structure (on the way)
+-- sds
+-- linklist
+-- hash
+-- skiplist
 
 ## Hands on some useful tools
 
-- LRU <template formation>
+- LRU (template formation)
+- Thread Pool (on the way)
