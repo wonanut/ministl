@@ -11,7 +11,7 @@ template <typename Key_Type, typename Value_Type>
 class ListNode {
 public:
 	ListNode() : next(nullptr), prev(nullptr) {};
-	ListNode(int key_, int val_) : key(key_), val(val_), next(nullptr), prev(nullptr) {}
+	ListNode(Key_Type key_, Value_Type val_) : key(key_), val(val_), next(nullptr), prev(nullptr) {}
 	Key_Type getKey() { return this->key; }
 	Value_Type getVal() { return this->val; }
 	void setNext(ListNode<Key_Type, Value_Type>* node) { this->next = node; }
