@@ -76,7 +76,7 @@ public:
 		this->m_list = new LinkList<Key_Type, Value_Type>();
 	}
 
-	int get(int key) {
+	Key_Value get(Key_Value key) {
 		auto iter = this->m_map.find(key);
 		
 		// if the key appears in the map.
@@ -90,7 +90,7 @@ public:
 		return -1;
 	}
 
-	void put(int key, int val) {
+	void put(Key_Type key, Val_Type val) {
 		auto iter = this->m_map.find(key);
 		// if the key already existed in the map.
 		if (iter != this->m_map.end()) {
@@ -122,7 +122,7 @@ public:
 private:
 	int m_capacity;
 	int m_size;
-	std::unordered_map<int, ListNode<Key_Type, Value_Type>*> m_map;
+	std::unordered_map<Key_Type, ListNode<Key_Type, Value_Type>*> m_map;
 	LinkList<Key_Type, Value_Type>* m_list;
 };
 }
