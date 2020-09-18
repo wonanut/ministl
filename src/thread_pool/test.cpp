@@ -1,14 +1,6 @@
 #include <iostream>
 #include "CThreadPool.h"
 
-void test() {
-	int arr[5] = { 1,2,3,4,5 };
-	std::sort(arr, arr + 5, [](int a, int b) { return a < b; });
-	for (auto item : arr) {
-		std::cout << item << ", ";
-	}
-}
-
 int main() {
 	tlib::CThreadPool pool(10);
 	/*auto result = pool.enqueue([](int answer) {return answer; }, 42);
@@ -31,8 +23,6 @@ int main() {
 	//	std::cout << result.get() << " ";
 	//}
 	//std::cout << std::endl;
-
-	//test();
 
 	return 0;
 }
